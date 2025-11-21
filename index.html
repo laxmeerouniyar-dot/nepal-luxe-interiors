@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Nepal Luxe Interiors - Elegant Interior Design</title>
+  <link rel="stylesheet" href="styles.css">
+  <script>
+    function showPage(pageId) {
+      document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+      document.getElementById(pageId).classList.add('active');
+      document.querySelectorAll('.nav-links a').forEach(a => a.classList.remove('active'));
+      event.target.classList.add('active');
+    }
+  </script>
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="container">
+        <h1 class="logo">Nepal Luxe Interiors</h1>
+        <ul class="nav-links">
+          <li><a href="#" onclick="showPage('home')" class="active">Home</a></li>
+          <li><a href="#" onclick="showPage('about')">About Us</a></li>
+          <li><a href="#" onclick="showPage('services')">Services</a></li>
+          <li><a href="#" onclick="showPage('contact')">Contact Us</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Home Page -->
+  <div id="home" class="page active">
+    <section class="hero">
+      <div class="hero-content">
+        <span class="tagline">Design Your Home With Nepal Luxe Interiors</span>
+        <h1>Start Your Journey From Your Beautiful Home</h1>
+        <p>Experience the elegance of Nepali-inspired interior design, blending traditional Himalayan aesthetics with modern luxury. Nepal Luxe Interiors brings timeless beauty to your space.</p>
+        <a href="#" onclick="showPage('contact')" class="btn">Contact Us</a>
+      </div>
+    </section>
+  </div>
+
+  <!-- About Us Page -->
+  <div id="about" class="page">
+    <section class="about-section">
+      <div class="container">
+        <h2>About Us</h2>
+        <p>At Nepal Luxe Interiors, we specialize in elegant interior design rooted in Nepal's rich cultural heritage. As a leading designer in Kathmandu, we combine traditional Nepali elements—like intricate wood carvings and vibrant textiles—with contemporary styles to create spaces that reflect your unique story.</p>
+        <p>With a passion for craftsmanship and sustainability, we use local materials to deliver personalized designs that harmonize comfort, culture, and innovation. Let Nepal Luxe Interiors transform your home into a sanctuary of elegance.</p>
+        <img src="https://images.pexels.com/photos/3184430/pexels-photo-3184430.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Nepali interior design workspace" />
+      </div>
+    </section>
+  </div>
+
+  <!-- Services Page -->
+  <div id="services" class="page">
+    <section class="services-section">
+      <div class="container">
+        <h2>Our Services</h2>
+        <div class="services-grid">
+          <div class="service-card">
+            <img src="https://images.pexels.com/photos/1643383/pexels-photo-1643383.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Residential design in Nepal" />
+            <h3>Residential Design</h3>
+            <p>Custom designs for Nepali homes, incorporating local motifs and sustainable materials for a cozy, culturally rich living space.</p>
+          </div>
+          <div class="service-card">
+            <img src="https://images.pexels.com/photos/3184339/pexels-photo-3184339.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Commercial interiors in Kathmandu" />
+            <h3>Commercial Interiors</h3>
+            <p>Elegant office and retail spaces in Nepal, blending Himalayan elegance with modern functionality to inspire productivity.</p>
+          </div>
+          <div class="service-card">
+            <img src="https://images.pexels.com/photos/1643384/pexels-photo-1643384.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Space planning in Nepal" />
+            <h3>Space Planning</h3>
+            <p>Optimizing layouts for Nepali homes and businesses, maximizing space with traditional and contemporary design principles.</p>
+          </div>
+          <div class="service-card">
+            <img src="https://images.pexels.com/photos/1571460/pexels-photo-1571460.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Custom furniture in Nepal" />
+            <h3>Custom Furniture</h3>
+            <p>Handcrafted furniture inspired by Nepali artisans, using local woods and designs for bespoke, elegant pieces.</p>
+          </div>
+        </div>
+        <div class="portfolio">
+          <h3>Our Work</h3>
+          <div class="portfolio-grid">
+            <div class="portfolio-item">
+              <img src="https://images.pexels.com/photos/9565973/pexels-photo-9565973.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Elegant living room design" />
+              <div class="overlay">
+                <h4>Elegant Living Room Design</h4>
+                <p>Location: Kathmandu, Nepal<br>Completed: 2024<br>Features: Modern sofa, wooden accents, and Himalayan-inspired decor for a welcoming space.</p>
+              </div>
+            </div>
+            <div class="portfolio-item">
+              <img src="https://images.pexels.com/photos/534172/pexels-photo-534172.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Modern dining room design" />
+              <div class="overlay">
+                <h4>Modern Dining Room Design</h4>
+                <p>Location: Pokhara, Nepal<br>Completed: 2024<br>Features: Wooden table, cultural motifs, and warm lighting for family gatherings.</p>
+              </div>
+            </div>
+            <div class="portfolio-item">
+              <img src="https://images.pexels.com/photos/271618/pexels-photo-271618.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Cozy bedroom design" />
+              <div class="overlay">
+                <h4>Cozy Bedroom Design</h4>
+                <p>Location: Lalitpur, Nepal<br>Completed: 2023<br>Features: Soft bedding, local textiles, and natural lighting for ultimate relaxation.</p>
+              </div>
+            </div>
+            <div class="portfolio-item">
+              <img src="https://images.pexels.com/photos/7046168/pexels-photo-7046168.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Modern meeting hall design" />
+              <div class="overlay">
+                <h4>Modern Meeting Hall Design</h4>
+                <p>Location: Bhaktapur, Nepal<br>Completed: 2023<br>Features: Ergonomic furniture, clean lines, and inspiring decor for productive meetings.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- Contact Us Page -->
+  <div id="contact" class="page">
+    <section class="contact-section">
+      <div class="container">
+        <h2>Contact Us</h2>
+        <form class="contact-form">
+          <label for="name">Full Name</label>
+          <input type="text" id="name" name="name" required />
+
+          <label for="email">Email Address</label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+
+          <button type="submit" class="btn">Send Message</button>
+        </form>
+        <div class="contact-info">
+          <h3>Get In Touch</h3>
+          <p>Email: info@nepalluxeinteriors.com</p>
+          <p>Phone: +977 123-4567</p>
+          <p>Address: 123 Thamel Road, Kathmandu, Nepal</p>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Nepal Luxe Interiors. All Rights Reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>
